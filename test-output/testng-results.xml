@@ -1,73 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42" started-at="2018-06-23T12:00:06Z" finished-at="2018-06-23T12:00:06Z">
+  <suite name="Default suite" duration-ms="13317" started-at="2018-08-09T01:15:33Z" finished-at="2018-08-09T01:15:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42" started-at="2018-06-23T12:00:06Z" finished-at="2018-06-23T12:00:06Z">
-      <class name="com.testng.TestNGBasics">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.TestNGBasics@e6a65d]" name="setUp" is-config="true" duration-ms="17" started-at="2018-06-23T12:00:06Z" finished-at="2018-06-23T12:00:06Z">
+    <test name="Default test" duration-ms="13317" started-at="2018-08-09T01:15:33Z" finished-at="2018-08-09T01:15:46Z">
+      <class name="com.parameters.ParameterTest">
+        <test-method status="PASS" signature="yahooLogInTest(java.lang.String, java.lang.String)[pri:0, instance:com.parameters.ParameterTest@4abdb505]" name="yahooLogInTest" duration-ms="13277" started-at="2018-08-09T01:15:33Z" finished-at="2018-08-09T01:15:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://login.yahoo.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@yahoo.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.testng.TestNGBasics@e6a65d]" name="launchBrowser" is-config="true" duration-ms="2" started-at="2018-06-23T12:00:06Z" finished-at="2018-06-23T12:00:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="logIn()[pri:0, instance:com.testng.TestNGBasics@e6a65d]" name="logIn" is-config="true" duration-ms="0" started-at="2018-06-23T12:00:06Z" finished-at="2018-06-23T12:00:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logIn -->
-        <test-method status="PASS" signature="googleLogoTest()[pri:0, instance:com.testng.TestNGBasics@e6a65d]" name="googleLogoTest" duration-ms="5" started-at="2018-06-23T12:00:06Z" finished-at="2018-06-23T12:00:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- googleLogoTest -->
-        <test-method status="PASS" signature="enterUrl()[pri:0, instance:com.testng.TestNGBasics@e6a65d]" name="enterUrl" is-config="true" duration-ms="0" started-at="2018-06-23T12:00:06Z" finished-at="2018-06-23T12:00:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterUrl -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:com.testng.TestNGBasics@e6a65d]" name="logOut" is-config="true" duration-ms="1" started-at="2018-06-23T12:00:06Z" finished-at="2018-06-23T12:00:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="enterUrl()[pri:0, instance:com.testng.TestNGBasics@e6a65d]" name="enterUrl" is-config="true" duration-ms="1" started-at="2018-06-23T12:00:06Z" finished-at="2018-06-23T12:00:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterUrl -->
-        <test-method status="PASS" signature="googleTitleTest()[pri:0, instance:com.testng.TestNGBasics@e6a65d]" name="googleTitleTest" duration-ms="2" started-at="2018-06-23T12:00:06Z" finished-at="2018-06-23T12:00:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- googleTitleTest -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:com.testng.TestNGBasics@e6a65d]" name="logOut" is-config="true" duration-ms="1" started-at="2018-06-23T12:00:06Z" finished-at="2018-06-23T12:00:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="enterUrl()[pri:0, instance:com.testng.TestNGBasics@e6a65d]" name="enterUrl" is-config="true" duration-ms="0" started-at="2018-06-23T12:00:06Z" finished-at="2018-06-23T12:00:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterUrl -->
-        <test-method status="PASS" signature="searchtest()[pri:0, instance:com.testng.TestNGBasics@e6a65d]" name="searchtest" duration-ms="3" started-at="2018-06-23T12:00:06Z" finished-at="2018-06-23T12:00:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchtest -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:com.testng.TestNGBasics@e6a65d]" name="logOut" is-config="true" duration-ms="1" started-at="2018-06-23T12:00:06Z" finished-at="2018-06-23T12:00:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.testng.TestNGBasics@e6a65d]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2018-06-23T12:00:06Z" finished-at="2018-06-23T12:00:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="deleteAllCookies()[pri:0, instance:com.testng.TestNGBasics@e6a65d]" name="deleteAllCookies" is-config="true" duration-ms="1" started-at="2018-06-23T12:00:06Z" finished-at="2018-06-23T12:00:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteAllCookies -->
-        <test-method status="PASS" signature="generateTestReport()[pri:0, instance:com.testng.TestNGBasics@e6a65d]" name="generateTestReport" is-config="true" duration-ms="0" started-at="2018-06-23T12:00:06Z" finished-at="2018-06-23T12:00:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generateTestReport -->
-      </class> <!-- com.testng.TestNGBasics -->
+        </test-method> <!-- yahooLogInTest -->
+      </class> <!-- com.parameters.ParameterTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

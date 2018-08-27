@@ -1,4 +1,4 @@
-package com.parameters;
+package com.testng.parameters;
 
 import java.util.concurrent.TimeUnit;
 

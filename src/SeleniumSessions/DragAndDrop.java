@@ -30,6 +30,9 @@ public class DragAndDrop {
 		.release()
 		.build()
 		.perform();
+		
+		//actions.contextClick("<webelement>").build.perform();      //right click.
+		
 	}
 
 }
