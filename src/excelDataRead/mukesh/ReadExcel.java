@@ -2,51 +2,54 @@ package excelDataRead.mukesh;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
+
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.testng.annotations.Test;
 
-public class ReadExcel {
+public class ReadExcel
+{
 
-	 public static void main(String []args){
-  
-  try {
-  // Specify the path of file
-  File src=new File("filepath/excelsheetname.xlsx");
+	public static void main(String[] args)
+	{
 
-   // load file
-   FileInputStream fis=new FileInputStream(src);
- 
-   // Load workbook
-   XSSFWorkbook wb=new XSSFWorkbook(fis);
-   
-   // Load sheet- Here we are loading first sheetonly
-      XSSFSheet sh1= wb.getSheetAt(0);
- 
-  // getRow() specify which row we want to read.
+		try
+		{
+			// Specify the path of file
+			File src = new File("filepath/excelsheetname.xlsx");
 
-  // and getCell() specify which column to read.
-  // getStringCellValue() specify that we are reading String data.
+			// load file
+			FileInputStream fis = new FileInputStream(src);
 
+			// Load workbook
+			XSSFWorkbook wb = new XSSFWorkbook(fis);
 
- System.out.println(sh1.getRow(0).getCell(0).getStringCellValue());
+			// Load sheet- Here we are loading first sheetonly
+			XSSFSheet sh1 = wb.getSheetAt(0);
 
- System.out.println(sh1.getRow(0).getCell(1).getStringCellValue());
+			// getRow() specify which row we want to read.
 
- System.out.println(sh1.getRow(1).getCell(0).getStringCellValue());
+			// and getCell() specify which column to read.
+			// getStringCellValue() specify that we are reading String data.
 
- System.out.println(sh1.getRow(1).getCell(1).getStringCellValue());
+			System.out.println(sh1.getRow(0).getCell(0).getStringCellValue());
 
- System.out.println(sh1.getRow(2).getCell(0).getStringCellValue());
+			System.out.println(sh1.getRow(0).getCell(1).getStringCellValue());
 
- System.out.println(sh1.getRow(2).getCell(1).getStringCellValue());
- 
-  } catch (Exception e) {
+			System.out.println(sh1.getRow(1).getCell(0).getStringCellValue());
 
-   System.out.println(e.getMessage());
+			System.out.println(sh1.getRow(1).getCell(1).getStringCellValue());
 
-  }
-  
- } 
+			System.out.println(sh1.getRow(2).getCell(0).getStringCellValue());
+
+			System.out.println(sh1.getRow(2).getCell(1).getStringCellValue());
+
+		}
+		catch (Exception e)
+		{
+
+			System.out.println(e.getMessage());
+
+		}
+
+	}
 }

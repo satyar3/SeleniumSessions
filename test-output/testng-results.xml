@@ -2,28 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13317" started-at="2018-08-09T01:15:33Z" finished-at="2018-08-09T01:15:46Z">
+  <suite name="Default suite" duration-ms="13064" started-at="2018-08-28T05:12:58Z" finished-at="2018-08-28T05:13:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13317" started-at="2018-08-09T01:15:33Z" finished-at="2018-08-09T01:15:46Z">
-      <class name="com.parameters.ParameterTest">
-        <test-method status="PASS" signature="yahooLogInTest(java.lang.String, java.lang.String)[pri:0, instance:com.parameters.ParameterTest@4abdb505]" name="yahooLogInTest" duration-ms="13277" started-at="2018-08-09T01:15:33Z" finished-at="2018-08-09T01:15:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://login.yahoo.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test@yahoo.com]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="13064" started-at="2018-08-28T05:12:58Z" finished-at="2018-08-28T05:13:11Z">
+      <class name="fileDownloader.DownloadFileConcept">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:fileDownloader.DownloadFileConcept@12cdcf4]" name="setUp" is-config="true" duration-ms="6863" started-at="2018-08-28T05:12:58Z" finished-at="2018-08-28T05:13:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- yahooLogInTest -->
-      </class> <!-- com.parameters.ParameterTest -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="downloadFileTest()[pri:0, instance:fileDownloader.DownloadFileConcept@12cdcf4]" name="downloadFileTest" duration-ms="5365" started-at="2018-08-28T05:13:05Z" finished-at="2018-08-28T05:13:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadFileTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:fileDownloader.DownloadFileConcept@12cdcf4]" name="tearDown" is-config="true" duration-ms="793" started-at="2018-08-28T05:13:11Z" finished-at="2018-08-28T05:13:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- fileDownloader.DownloadFileConcept -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

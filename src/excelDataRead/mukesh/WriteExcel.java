@@ -3,88 +3,79 @@ package excelDataRead.mukesh;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.testng.annotations.Test;
-
-import java.io.File;
-
-import java.io.FileInputStream;
-
-import java.io.FileOutputStream;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
-
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import org.testng.annotations.Test;
+public class WriteExcel
+{
 
-public class WriteExcel {
+	public static void main(String[] args)
+	{
 
-	 public static void main(String []args){
+		try
+		{
 
-  try {
+			// Specify the file path which you want to create or write
 
-  // Specify the file path which you want to create or write
+			File src = new File("./testdata/test.xlsx");
 
-  File src=new File("./testdata/test.xlsx");
+			// Load the file
 
-  // Load the file
+			FileInputStream fis = new FileInputStream(src);
 
-  FileInputStream fis=new FileInputStream(src);
+			// load the workbook
 
-   // load the workbook
+			XSSFWorkbook wb = new XSSFWorkbook(fis);
 
-   XSSFWorkbook wb=new XSSFWorkbook(fis);
+			// get the sheet which you want to modify or create
 
-  // get the sheet which you want to modify or create
+			XSSFSheet sh1 = wb.getSheetAt(0);
 
-   XSSFSheet sh1= wb.getSheetAt(0);
+			// getRow specify which row we want to read and getCell which column
 
- // getRow specify which row we want to read and getCell which column
+			System.out.println(sh1.getRow(0).getCell(0).getStringCellValue());
 
- System.out.println(sh1.getRow(0).getCell(0).getStringCellValue());
+			System.out.println(sh1.getRow(0).getCell(1).getStringCellValue());
 
- System.out.println(sh1.getRow(0).getCell(1).getStringCellValue());
+			System.out.println(sh1.getRow(1).getCell(0).getStringCellValue());
 
- System.out.println(sh1.getRow(1).getCell(0).getStringCellValue());
+			System.out.println(sh1.getRow(1).getCell(1).getStringCellValue());
 
- System.out.println(sh1.getRow(1).getCell(1).getStringCellValue());
+			System.out.println(sh1.getRow(2).getCell(0).getStringCellValue());
 
- System.out.println(sh1.getRow(2).getCell(0).getStringCellValue());
+			System.out.println(sh1.getRow(2).getCell(1).getStringCellValue());
 
- System.out.println(sh1.getRow(2).getCell(1).getStringCellValue());
+			// here createCell will create column
 
-// here createCell will create column
+			// and setCellvalue will set the value
 
-// and setCellvalue will set the value
+			sh1.getRow(0).createCell(2).setCellValue("2.41.0");
 
- sh1.getRow(0).createCell(2).setCellValue("2.41.0");
+			sh1.getRow(1).createCell(2).setCellValue("2.5");
 
- sh1.getRow(1).createCell(2).setCellValue("2.5");
+			sh1.getRow(2).createCell(2).setCellValue("2.39");
 
- sh1.getRow(2).createCell(2).setCellValue("2.39");
+			// here we need to specify where you want to save file
 
+			FileOutputStream fout = new FileOutputStream(new File("location of file/filename.xlsx"));
 
-// here we need to specify where you want to save file
+			// finally write content
 
- FileOutputStream fout=new FileOutputStream(new File("location of file/filename.xlsx"));
+			wb.write(fout);
 
+			// close the file
 
-// finally write content 
+			fout.close();
 
- wb.write(fout);
+		}
+		catch (Exception e)
+		{
 
-// close the file
+			System.out.println(e.getMessage());
 
- fout.close();
+		}
 
-  } catch (Exception e) {
-
-   System.out.println(e.getMessage());
-
-  }
-
- }
+	}
 
 }

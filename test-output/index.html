@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\satyaranjan.muduli\AppData\Local\Temp\testng-eclipse--265855758\testng-customsuite.xml</span>
+                    <span>C:\Users\satyaranjan.muduli\AppData\Local\Temp\testng-eclipse-1947789684\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.parameters.ParameterTest" hash-for-method="yahooLogInTest(https://login.yahoo.com, test@yahoo.com)">yahooLogInTest(https://login.yahoo.com, test@yahoo.com)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="fileDownloader.DownloadFileConcept" hash-for-method="downloadFileTest">downloadFileTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,15 +120,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.parameters.ParameterTest</span>
+              <span class="class-name">fileDownloader.DownloadFileConcept</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="yahooLogInTest(https://login.yahoo.com, test@yahoo.com)">
-                  </a> <!-- yahooLogInTest(https://login.yahoo.com, test@yahoo.com) -->
-                  <span class="method-name">yahooLogInTest</span>
-                  <span class="parameters">(https://login.yahoo.com, test@yahoo.com)</span>
+                  <a name="downloadFileTest">
+                  </a> <!-- downloadFileTest -->
+                  <span class="method-name">downloadFileTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,18 +135,16 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\satyaranjan.muduli\AppData\Local\Temp\testng-eclipse--265855758\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\satyaranjan.muduli\AppData\Local\Temp\testng-eclipse-1947789684\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;parameter name=&quot;emailID&quot; value=&quot;test@yahoo.com&quot;/&gt;
-  &lt;parameter name=&quot;url&quot; value=&quot;https://login.yahoo.com&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.parameters.ParameterTest&quot;/&gt;
+      &lt;class name=&quot;fileDownloader.DownloadFileConcept&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -189,14 +186,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'yahooLogInTest')
-data.setCell(0, 2, 'com.parameters.ParameterTest')
-data.setCell(0, 3, 13277);
+data.setCell(0, 1, 'downloadFileTest')
+data.setCell(0, 2, 'fileDownloader.DownloadFileConcept')
+data.setCell(0, 3, 5365);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -222,11 +219,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.parameters.ParameterTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">yahooLogInTest(https://login.yahoo.com, test@yahoo.com)</span>
+              <div class="chronological-class-name">fileDownloader.DownloadFileConcept</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">downloadFileTest</span>
+                <span class="method-start">6863 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">12232 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -44,7 +44,6 @@
 	<classpathentry exported="true" kind="lib" path="C:/Back Up/Project Work/Learning Stuffs/Selenium Training By Jitendra/Self Study/Tools/Apache POI/poi-3.14/ooxml-lib/xmlbeans-2.6.0.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
 	<classpathentry kind="lib" path="C:/Back Up/Project Work/Learning Stuffs/Selenium Training By Jitendra/Self Study/Tools/Testng/testng-6.0.jar/testng-6.0.jar"/>
-	<classpathentry kind="lib" path="C:/Back Up/Project Work/Learning Stuffs/Selenium Training By Jitendra/Self Study/Tools/hamcrest-library.jar"/>
-	<classpathentry kind="lib" path="C:/Back Up/Project Work/Learning Stuffs/Selenium Training By Jitendra/Self Study/Tools/hamcrest-all-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Back Up/Project Work/Learning Stuffs/Selenium Training By Jitendra/Self Study/Tools/Hamcrest/hamcrest-all-1.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
