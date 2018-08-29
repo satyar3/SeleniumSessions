@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="fileDownloader.DownloadFileConcept">
+      <class name="freecrm.hashmap.exapmle.FreeCRMTestClass">
         <methods>
-          <include name="tearDown"/>
-          <include name="downloadFileTest"/>
+          <include name="loginWithAdminUser"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginWithCustomerUser"/>
         </methods>
-      </class> <!-- fileDownloader.DownloadFileConcept -->
+      </class> <!-- freecrm.hashmap.exapmle.FreeCRMTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
