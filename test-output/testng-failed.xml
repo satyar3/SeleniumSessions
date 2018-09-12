@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="freecrm.hashmap.exapmle.FreeCRMTestClass">
+      <class name="SeleniumSessions.JavaScriptErrorsLogging">
         <methods>
-          <include name="loginWithAdminUser"/>
+          <include name="test"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="loginWithCustomerUser"/>
         </methods>
-      </class> <!-- freecrm.hashmap.exapmle.FreeCRMTestClass -->
+      </class> <!-- SeleniumSessions.JavaScriptErrorsLogging -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
