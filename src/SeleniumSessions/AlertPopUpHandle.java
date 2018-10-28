@@ -12,6 +12,7 @@ public class AlertPopUpHandle {
 		
 		System.setProperty("webdriver.chrome.driver","C:\\Back Up\\Project Work\\Learning Stuffs\\Selenium Training By Jitendra\\Self Study\\Tools\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+
 		driver.get("https://mail.rediff.com/");
 		
 		driver.findElement(By.linkText("Sign in")).click();
