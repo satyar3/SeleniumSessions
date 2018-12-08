@@ -33,6 +33,23 @@ public class DragAndDrop {
 		
 		//actions.contextClick("<webelement>").build.perform();      //right click.
 		
-	}
+		/*
+		 * 
+		 * if present in different frames :		 
+		 * 
+		  	driver.switchTo().defaultContent();
+			Actions builder = new Actions(driver);
+			builder.clickAndHold(from);
+			Action action = builder.build();
+			action.perform();
 
+			driver.switchTo().frame("<to element frame id>");
+
+			builder.moveToElement(to);
+			builder.release(to);
+			action = builder.build();
+			action.perform();
+		 * 
+		 */
+	}
 }

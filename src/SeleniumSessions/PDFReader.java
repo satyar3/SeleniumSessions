@@ -16,7 +16,7 @@ public class PDFReader
 		// https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox/2.0.12
 		// https://mvnrepository.com/artifact/org.apache.pdfbox/fontbox/2.0.2
 		
-		URL url = new URL("https://www.antennahouse.com/XSLsample/pdf/sample-link_1.pdf");
+		URL url = new URL("file:///C:/Users/satyaranjan.muduli/Desktop/PDF%20Read/FLRA%20Client%20version%20v5_11-05.pdf");
 		InputStream is = url.openStream();
 		BufferedInputStream bufferedInputStream = new BufferedInputStream(is);
 		PDDocument document = null;

@@ -50,5 +50,7 @@
 	<classpathentry kind="lib" path="C:/Users/satyaranjan.muduli/.m2/repository/com/google/zxing/core/3.3.3/core-3.3.3.jar"/>
 	<classpathentry kind="lib" path="C:/Back Up/Project Work/Learning Stuffs/Selenium Training By Jitendra/Self Study/Tools/pdfbox-2.0.12.jar"/>
 	<classpathentry kind="lib" path="C:/Back Up/Project Work/Learning Stuffs/Selenium Training By Jitendra/Self Study/Tools/fontbox-2.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Back Up/Project Work/Learning Stuffs/Selenium Training By Jitendra/Self Study/Tools/ashot-1.5.4.jar"/>
+	<classpathentry kind="lib" path="C:/Back Up/Project Work/Learning Stuffs/Selenium Training By Jitendra/Self Study/Tools/itextpdf-5.5.13.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

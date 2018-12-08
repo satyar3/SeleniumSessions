@@ -4,7 +4,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 public class HTMLUnitDriverConcept {
@@ -44,9 +43,5 @@ public class HTMLUnitDriverConcept {
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		
 		System.out.println("After login page title is : "+driver.getTitle());
-		
-		
-
 	}
-
 }
