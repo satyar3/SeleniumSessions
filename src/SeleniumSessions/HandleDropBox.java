@@ -1,7 +1,10 @@
 package SeleniumSessions;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -15,7 +18,16 @@ public class HandleDropBox {
 		
 		Select select = new Select(driver.findElement(By.xpath("//*[@id='day']")));
 		select.selectByVisibleText("4");
-		//driver.findElement(By.xpath("//*[@id='day']")).click();		
+		//driver.findElement(By.xpath("//*[@id='day']")).click();	
+		
+		//Tells if the list is multiselect or not
+		select.isMultiple();
+		
+		//Get all the options from the dropdown
+		List<WebElement> allOptions = select.getOptions();
+		
+		//Get all the selected options from the dropdown
+		List<WebElement> selOptions = select.getAllSelectedOptions();
 	}
 
 }
