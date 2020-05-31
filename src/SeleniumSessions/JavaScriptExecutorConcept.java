@@ -69,6 +69,9 @@ public class JavaScriptExecutorConcept
 
 		//scroll until the element is visible
 		scrollIntoVIew(forgotpass, driver);
+		
+		//SendKeys Action using JSE
+		sendKeyUsingJSE("Value", forgotpass)
 	}
 
 	public static void flash(WebElement element, WebDriver driver)
@@ -145,6 +148,14 @@ public class JavaScriptExecutorConcept
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
+	
+	public static void sendKeyUsingJSE(String val, WebElement el)
+	{
+		JavascriptExecutor jse = ((JavascriptExecutor) driver);
+		//WebElement el = driver.findElement(By.cssSelector(".dropdown-menu.pull-left .input"));
+		jse.executeScript("arguments[0].value='"+val+"';",el);
+	}
+
 
 	public static void checkPageIsReady()
 	{
