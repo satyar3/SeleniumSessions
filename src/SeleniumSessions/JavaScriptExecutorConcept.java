@@ -145,6 +145,13 @@ public class JavaScriptExecutorConcept
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
+	
+	 public static void setBrowserZoomLevel(String zoomLevel)
+     {
+             JavascriptExecutor js = ((JavascriptExecutor) driver);
+             js.executeScript("document.body.style.zoom='"+zoomLevel+"%';");
+
+     }
 
 	public static void checkPageIsReady()
 	{
