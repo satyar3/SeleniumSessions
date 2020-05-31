@@ -156,7 +156,13 @@ public class JavaScriptExecutorConcept
 		jse.executeScript("arguments[0].value='"+val+"';",el);
 	}
 
+	 public static void setBrowserZoomLevel(String zoomLevel)
+     {
+             JavascriptExecutor js = ((JavascriptExecutor) driver);
+             js.executeScript("document.body.style.zoom='"+zoomLevel+"%';");
 
+     }
+	
 	public static void checkPageIsReady()
 	{
 
